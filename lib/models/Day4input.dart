@@ -1,3 +1,4 @@
+import 'package:app/models/Day4_Part2_Form_Validation.dart';
 import 'package:flutter/material.dart';
 
 class Day4input extends StatefulWidget {
@@ -56,6 +57,17 @@ class _Day4inputState extends State<Day4input> {
                 ],
               ),
               Text(name, style: TextStyle(fontSize: 20, fontWeight: .bold)),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Day4Part2FormValidation(),
+                    ),
+                  );
+                },
+                child: Text("Go to Day 4- Part 2, Form & Validation"),
+              ),
             ],
           ),
         ),
